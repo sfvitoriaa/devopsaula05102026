@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checar arquivos estáticos
+        run: |
+          ls -R
+          echo "Todos os arquivos foram carregados no Runner!"
